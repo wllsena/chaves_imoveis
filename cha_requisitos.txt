@@ -1,0 +1,21 @@
+* Lista de requisitos
+
+  * Manter cadastro de funcionários (nome, celular, endereço, CPF, função e relacionamento com a empresa). Função é: corretor ou secretário ou estagiário; relacionamento é: sócio ou contratado.
+
+  * Manter cadastro de corretores (nome, celular, endereço, CPF, bugdet publicitário e registro do órgão regulador de corretores - CRECI). Um corretor é responsável por uma ou mais coberturas.
+
+  * Manter cadastro da cobertura (corretor responsável, cidade e bairro - opcional). Uma cobertura pode possuir nenhum ou mais de um imóvel mas somente um corretor.
+
+  * Manter cadastro do meios de comunicação (tipo e valor).
+
+  * Manter registro de anúncios em meios de comunicação (data de início, data de fim e orçamento).
+
+  * Manter cadastro de clientes (nome, celular, endereço e CPF). Um cliente pode possuir nenhum ou mais de um imóvel.
+
+  * Manter cadastro de imóveis (proprietário, endereço, cobertura e valor desejado para venda). Um imóvel pode ter um ou mais proprietários e nenhum ou mais de um anúncios em meios de comunicações.
+
+  * Manter registro de compras (imóvel, valor, data, vendedor e comprador).
+
+  
+
+

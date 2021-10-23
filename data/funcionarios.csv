@@ -1,0 +1,61 @@
+IdFuncionario,Nome,Telefone,CPF,Endereço,IdFunção,IdRelacionamento
+1,Dr. Daniel Mendes,+55 71 7787 7564,347.692.518-82,"Praia Dias, 69
+Novo Das Industrias
+09360-288 Lopes de da Cunha / AP",1,2
+2,Marcelo Dias,0300-590-5961,294.057.618-11,"Ladeira Luigi Vieira, 14
+Vila Santo Antônio Barroquinha
+12123222 Peixoto / PR",1,2
+3,Fernando Cardoso,(071) 9036 4635,234.586.097-92,"Praia da Cunha, 767
+Vila Nova Cachoeirinha 3ª Seção
+05211-767 Santos / GO",1,2
+4,Giovanna Cunha,71 7374 9151,926.547.801-20,"Área Calebe Cavalcanti, 4
+Biquinhas
+26793312 da Cruz / SC",1,2
+5,Marina Novaes,+55 (051) 0301-8114,740.182.953-32,"Distrito de Novaes, 22
+Solimoes
+13486-566 Peixoto de Rezende / CE",1,2
+6,Henrique Azevedo,+55 (051) 6715-7735,132.784.596-28,"Área de Duarte, 19
+Funcionários
+05110388 Pires do Oeste / MA",1,2
+7,Eloah Carvalho,+55 61 2773 5865,213.860.594-98,"Alameda Carolina Vieira, 521
+Pirineus
+45791-329 Cardoso / RS",1,2
+8,Heloísa Carvalho,+55 (081) 1940-2814,291.840.653-89,"Rua de da Cunha
+Santa Rita
+59722-303 da Mota / AM",1,1
+9,Pietra da Luz,0500-590-9755,527.146.098-30,"Favela Sabrina da Cruz, 41
+Beira Linha
+43725-413 Cavalcanti / CE",1,2
+10,Agatha da Mota,(051) 9264 3995,630.149.275-70,"Recanto Lucca Peixoto, 23
+Conjunto Capitão Eduardo
+17951-070 da Mota / RR",1,2
+11,Lara da Mota,81 1082 2953,471.502.698-85,"Fazenda João Guilherme Caldeira
+Vila Sesc
+96737-248 da Rosa / MS",1,2
+12,Carolina Cardoso,21 8999-5700,012.568.374-07,"Trevo Lopes
+Lagoinha Leblon
+29088889 Freitas / PA",1,2
+13,Pedro Cardoso,+55 51 2182 9226,519.428.367-91,"Recanto Cardoso, 688
+Dom Cabral
+10566155 da Paz do Sul / RR",1,2
+14,Ana Luiza Dias,+55 (071) 2684 7702,675.412.983-28,"Trevo de Moura, 71
+Paquetá
+14696-391 da Cruz / MT",3,2
+15,Lucca Sales,+55 (051) 7500-6919,635.209.147-43,"Setor Thales Peixoto
+Vila São Gabriel
+74523-333 Silveira da Prata / PR",2,2
+16,Sr. Kevin Santos,+55 61 2977 4470,527.380.914-23,"Esplanada Pires, 77
+Chácara Leonina
+47894-833 Moraes dos Dourados / RR",1,1
+17,Maria Luiza Ribeiro,+55 (061) 4988 2999,785.462.091-11,"Vale Rezende, 1
+Cenaculo
+41962976 Sales / AL",1,2
+18,Luigi Nogueira,+55 (021) 7659 7645,847.061.329-40,"Recanto de Rocha, 52
+Xangri-Lá
+14765401 Peixoto Grande / MT",3,2
+19,Emanuel Silveira,(031) 8641-5104,674.389.251-37,"Ladeira Lucas Duarte, 157
+Vila Nova Cachoeirinha 3ª Seção
+27653-461 Rocha do Oeste / SC",1,2
+20,Cauã Moreira,(011) 8312 0112,659.037.281-03,"Viaduto Laura Fernandes, 471
+Vila Jardim Montanhes
+64945940 Cavalcanti / MA",1,2

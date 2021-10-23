@@ -1,0 +1,301 @@
+IdCliente,Nome,Telefone,CPF,Endereço
+1,Breno Silva,(011) 7207-2113,254.710.693-07,"Feira Eloah Silva, 727
+Atila De Paiva
+20098872 Souza / PA"
+2,Ana Luiza Farias,+55 21 0329 3100,672.083.145-35,"Viaduto Viana, 6
+Santo Agostinho
+45004111 Teixeira / TO"
+3,Yasmin Martins,+55 (041) 6180 8581,895.723.640-65,"Vereda Viana
+Esplanada
+33233-892 Cavalcanti / PA"
+4,Srta. Juliana Ramos,0300 249 2824,206.874.315-90,"Rodovia Farias, 44
+Cardoso
+20052530 da Rosa / RJ"
+5,Pietra Nascimento,21 2676 1639,261.435.087-71,"Parque de Viana, 105
+Caiçaras
+87055721 da Paz da Serra / RR"
+6,Luiz Miguel Teixeira,61 6136 7588,031.259.487-97,"Esplanada de Gonçalves, 12
+João Paulo Ii
+94980-754 Melo do Sul / AL"
+7,Marina da Conceição,+55 (031) 3822 1937,836.209.741-87,"Feira Ana Barros, 703
+Grajaú
+27047448 Mendes de Jesus / SP"
+8,Giovanna Gomes,+55 41 1954 7570,037.486.192-78,"Favela Maria Sophia Gomes, 56
+Maria Goretti
+41022-488 Barros / MG"
+9,Luiz Gustavo Caldeira,31 2702 2597,358.694.201-05,"Ladeira de da Rocha, 80
+Tiradentes
+36457-518 Cavalcanti do Oeste / CE"
+10,Elisa Moura,(021) 4671 2633,437.890.612-04,"Morro Isadora Peixoto, 224
+Novo Tupi
+83842-936 Silveira Paulista / DF"
+11,Yago Gomes,(051) 5934 7575,095.873.246-92,"Conjunto Teixeira
+Colégio Batista
+06189989 Lima do Galho / PE"
+12,Bruno Nogueira,+55 (041) 7956-9019,108.537.496-39,"Conjunto de Costela, 67
+Colégio Batista
+45716-064 Barros / PA"
+13,Dra. Ana Beatriz Melo,(084) 5004 2884,764.891.032-22,"Aeroporto Leonardo Barbosa, 88
+Conjunto Taquaril
+52550418 Nascimento / MG"
+14,Dr. Samuel Carvalho,41 4227-6045,781.964.052-94,"Aeroporto Isadora Lima, 461
+Cardoso
+29289380 Cunha / MA"
+15,João Guilherme Viana,+55 (084) 8718 2632,895.360.271-86,"Alameda Francisco Cavalcanti
+Leonina
+94593418 da Rosa / SP"
+16,Nicole Oliveira,+55 (041) 6668 1410,189.027.456-94,"Via Danilo Novaes
+Atila De Paiva
+60405640 Caldeira / RO"
+17,Ana Luiza da Luz,+55 61 4419 1499,439.106.527-43,"Via de Cavalcanti, 2
+Vila Independencia 1ª Seção
+63839175 Santos da Prata / PI"
+18,Murilo Azevedo,+55 (011) 1836 2167,189.736.524-19,"Estação de Oliveira, 8
+Leticia
+41495-093 Pereira / SP"
+19,Dra. Marcela Rezende,(031) 4725 6031,721.843.065-17,"Lago Caio Vieira, 461
+Conjunto Serra Verde
+13923421 Gomes / SE"
+20,Bernardo Nunes,71 5434 3373,823.916.407-22,"Travessa João Pedro Novaes, 14
+Cinquentenário
+03862-135 da Cruz / MG"
+21,Maysa Nunes,84 5268 5383,548.127.306-35,"Viela de Caldeira, 48
+Distrito Industrial Do Jatoba
+08418-640 Barbosa / SP"
+22,Paulo Almeida,+55 (021) 2545 8419,724.198.530-32,"Largo Luna Nascimento, 999
+Marieta 3ª Seção
+08705-213 Lima / AC"
+23,Nina Novaes,0900-983-6839,453.017.682-71,"Favela Raul Pires, 649
+Pedreira Padro Lopes
+55161-523 Oliveira / AL"
+24,Eduarda Teixeira,(071) 2470 4913,971.534.280-97,"Lago Gonçalves, 22
+Tiradentes
+16574-036 Rodrigues dos Dourados / AM"
+25,Marcos Vinicius Santos,+55 (031) 3331-9072,378.620.945-65,"Residencial Novaes, 2
+Beira Linha
+07942105 Duarte Alegre / RR"
+26,Sra. Isabelly Silveira,+55 (031) 5885 8025,974.623.805-10,"Viela Silva, 37
+Itapoa
+06649931 Teixeira das Pedras / MT"
+27,Lucas Alves,(011) 8448 1070,537.192.460-43,"Viaduto Cavalcanti, 2
+Santa Monica
+89921-252 Martins / MG"
+28,Sr. Luiz Gustavo Moura,+55 (084) 6671-6717,915.372.084-97,"Lago Oliveira, 74
+Parque São José
+70214-204 Ribeiro / ES"
+29,Noah da Mata,84 3371 4194,352.689.470-10,"Praça de Pires, 19
+Capitão Eduardo
+92616-048 Moreira / CE"
+30,Evelyn Gomes,84 3453 9655,476.213.589-55,"Vereda Enzo Peixoto, 47
+Leonina
+94923-207 Pereira / TO"
+31,Luiz Felipe da Rosa,0900 023 7072,607.814.925-30,"Setor de da Paz
+Carmo
+41882408 Barbosa / AM"
+32,Breno Monteiro,+55 (011) 9683-7905,493.201.786-31,"Travessa de Lima, 46
+Alta Tensão 2ª Seção
+78594-336 Ramos / MS"
+33,Helena Almeida,(084) 4209-4846,187.049.562-49,"Lago Silva, 88
+Vila Pilar
+39177-726 Fogaça do Oeste / MG"
+34,Letícia da Luz,61 8373 4790,695.312.480-60,"Vale Davi Lucas Rodrigues, 54
+Cidade Jardim Taquaril
+53296-060 Porto dos Dourados / CE"
+35,Sr. Juan Gomes,0300 546 1068,082.764.395-00,"Esplanada de da Rosa, 55
+Aparecida 7ª Seção
+71490714 Ribeiro / DF"
+36,Carlos Eduardo Moreira,(051) 8684 8054,521.307.489-88,"Esplanada João Oliveira, 67
+Vila Trinta E Um De Março
+14492567 Monteiro / SC"
+37,Lucas da Paz,0900 386 2034,574.286.130-35,"Viela de Freitas, 38
+São João Batista
+51260-853 Peixoto / PB"
+38,Sr. Breno Freitas,(081) 5999-0946,308.564.912-33,"Residencial da Conceição, 10
+Suzana
+02683-756 Cardoso do Oeste / DF"
+39,Lavínia Mendes,71 3455 0802,046.371.582-90,"Avenida Laura Sales, 39
+Vila Santo Antônio
+34151650 da Rocha / PE"
+40,Erick Nunes,(084) 2786 7823,384.650.129-89,"Avenida de Ferreira, 86
+Horto Florestal
+00048-304 Araújo de Minas / MG"
+41,Nathan Barbosa,+55 (071) 9525 6772,270.918.546-67,"Praça Ana Carolina da Rosa, 45
+Alto Das Antenas
+68057-454 Barros Grande / MT"
+42,Dr. Francisco Correia,+55 (071) 3030 9285,812.046.953-42,"Parque da Rocha, 93
+Marieta 2ª Seção
+99483059 Cunha Paulista / SC"
+43,Igor Nogueira,+55 (081) 8742-3809,570.238.914-04,"Distrito Alice Teixeira, 67
+Piratininga
+19911964 Rocha de Viana / SE"
+44,Gustavo Henrique da Mota,51 4543 8510,207.548.193-88,"Pátio de Mendes, 74
+Vila Minaslandia
+18774-706 Pereira da Prata / RN"
+45,Sophie da Costa,(081) 5171 7999,642.735.891-09,"Favela da Cunha, 759
+Cardoso
+77137-903 Farias / SP"
+46,João Miguel da Luz,+55 31 6322 0226,374.895.062-47,"Feira Ana Laura Cardoso, 10
+Vila Atila De Paiva
+49597548 Lima das Flores / AL"
+47,Sr. André Gomes,(021) 3565-1883,192.756.840-49,"Loteamento Ramos, 42
+Minaslandia
+81950279 Costa / TO"
+48,Lívia Ramos,(031) 8477-3696,729.406.815-11,"Ladeira de da Rocha, 40
+Marieta 1ª Seção
+55865736 Aragão do Galho / MG"
+49,João Lucas Carvalho,0300-421-6090,583.160.249-42,"Viela de Almeida, 28
+Xodo-Marize
+79420307 Pires de das Neves / SC"
+50,João Guilherme Gonçalves,51 6110 0059,341.098.567-01,"Lagoa Ana Lívia Azevedo, 78
+Bela Vitoria
+86403-786 Monteiro de Vieira / SC"
+51,Arthur Cardoso,+55 11 6690-9368,547.120.398-41,"Chácara de Peixoto, 62
+Minaslandia
+94586229 Teixeira / RN"
+52,Marcelo Oliveira,41 9082 6525,371.406.259-99,"Lagoa Maria Julia da Rosa, 7
+São Bento
+92726-171 Santos Alegre / SE"
+53,Caio Rocha,31 8959 0099,496.032.715-43,"Favela Arthur Freitas, 5
+Jardim Felicidade
+84282528 da Mata de Novaes / ES"
+54,Luiz Fernando Rodrigues,(071) 7113-4126,150.638.249-51,"Residencial Rezende, 4
+Piraja
+60004-459 Barbosa / RS"
+55,Srta. Sophie Rocha,61 7481 8849,109.736.845-93,"Morro Fernandes, 26
+Santa Cecilia
+63153877 Peixoto / BA"
+56,Pedro Lucas Pinto,61 3378-2269,381.206.495-24,"Praia de Peixoto
+Nossa Senhora Da Aparecida
+57857-565 Silva / SP"
+57,Dr. Cauã Melo,+55 31 6875-6265,214.039.867-03,"Rua Gomes, 82
+Serra
+72861-620 da Mota / BA"
+58,Brenda Almeida,+55 31 0292-1302,906.352.417-06,"Condomínio Benjamin Lima, 56
+Miramar
+56394-324 Aragão do Campo / SE"
+59,Catarina Pinto,61 1999-8045,608.415.397-66,"Via Diogo Pires, 251
+Barro Preto
+29683-841 Santos do Sul / RR"
+60,Rafaela Sales,0900 715 1396,507.293.641-43,"Condomínio Fernandes, 2
+Alípio De Melo
+62611232 da Cunha de Mendes / SP"
+61,Luiz Gustavo da Costa,84 6408 4074,957.621.840-30,"Parque Sales, 940
+Barão Homem De Melo 2ª Seção
+61719-312 Nascimento de Minas / RR"
+62,Francisco Barbosa,0300-791-8451,370.495.862-00,"Vereda Kamilly Araújo
+Lorena
+53536008 Peixoto / AM"
+63,Dra. Lavínia Viana,+55 41 8993 0024,913.647.258-19,"Vila de Aragão, 469
+Vila Tirol
+86576304 Gomes das Pedras / PE"
+64,Sr. Breno Dias,+55 (051) 1222 6251,058.243.971-04,"Ladeira Nunes, 34
+Mirante
+72223617 Ramos / RJ"
+65,Nicolas Silva,+55 84 0519-6326,920.315.467-16,"Estrada de da Costa, 82
+Maravilha
+09971582 Correia / ES"
+66,Gustavo Monteiro,+55 41 8329 0627,256.138.079-30,"Área Rafael da Conceição, 30
+Baleia
+89179-363 Duarte do Sul / BA"
+67,Sophie Monteiro,+55 (061) 6975-0975,861.275.390-21,"Pátio Yasmin Teixeira, 44
+Céu Azul
+68911-550 Alves / GO"
+68,Lucas Gabriel Melo,(051) 7884-5114,298.416.753-82,"Setor Gomes
+São Vicente
+77855332 Rodrigues de da Cruz / PB"
+69,Eloah Ramos,+55 21 5650-6871,769.280.315-30,"Vereda Sabrina Pereira
+Boa União 1ª Seção
+32166701 Nogueira do Norte / PB"
+70,Emanuel Moreira,0500-299-3371,729.341.086-78,"Recanto Ana Laura Barbosa, 35
+Jardim Atlântico
+96835-385 Nogueira de Lopes / TO"
+71,Thales Dias,+55 (084) 5698 9334,803.247.591-50,"Trecho Teixeira, 970
+Camponesa 1ª Seção
+01967-136 Farias / PR"
+72,Sra. Alícia Dias,(081) 0848 4237,962.145.780-76,"Jardim Ana Sophia da Mota, 87
+Santo André
+84991139 Dias de Azevedo / RJ"
+73,Matheus Duarte,(084) 9105 3778,193.724.058-41,"Estrada de Rezende, 845
+Santa Branca
+38768396 Ferreira da Serra / SC"
+74,Dra. Ana Vitória Araújo,(051) 5792-7669,695.247.830-29,"Chácara Viana, 13
+Barreiro
+80163-468 Caldeira do Oeste / GO"
+75,Miguel Souza,+55 (051) 1877-9834,491.362.785-64,"Viaduto Silva, 70
+Vila Fumec
+57942667 Pires / ES"
+76,Clara Souza,(071) 9207-4907,495.083.172-05,"Loteamento Melo, 53
+Conjunto Califórnia I
+73225-305 da Mata da Serra / PR"
+77,Noah Oliveira,+55 (084) 6181-6199,985.134.627-64,"Favela Farias, 6
+Senhor Dos Passos
+13769691 Silveira de Nunes / CE"
+78,Júlia Castro,71 2147 2968,360.891.724-13,"Largo da Cruz, 146
+Embaúbas
+87028-131 Barbosa / ES"
+79,Dra. Ana Clara Rodrigues,+55 (071) 3941 2404,453.890.261-60,"Colônia Novaes, 12
+São João Batista
+90797-472 Teixeira / AL"
+80,Sra. Clarice Azevedo,(051) 1479 1974,872.340.651-80,"Avenida Luiz Gustavo Rodrigues
+Conjunto Providencia
+70691548 Gonçalves / PR"
+81,Sr. Emanuel Nascimento,0300-785-3134,876.052.419-76,"Favela Correia, 715
+Frei Leopoldo
+21931088 Lopes / PE"
+82,Felipe Silva,+55 61 4803-7461,921.748.306-04,"Estação Rodrigues, 785
+Vila Ipiranga
+25628522 Ribeiro do Oeste / SE"
+83,Ana Luiza Farias,+55 (061) 1589-3852,496.081.732-13,"Área da Paz, 190
+São Jorge 1ª Seção
+91354045 Melo de Minas / PR"
+84,Srta. Nicole Teixeira,51 9773 0250,731.645.920-43,"Avenida Stella Novaes, 7
+Aparecida
+28584934 Silva de Minas / SE"
+85,Maria Luiza Pereira,+55 31 7450 1858,546.209.713-16,"Parque de Ribeiro, 3
+Penha
+39252866 da Conceição de Sales / MT"
+86,Maria Fernanda Pires,+55 (061) 8135-6264,357.804.126-26,"Viela da Rocha, 87
+Vila Independencia 3ª Seção
+05995810 Costela / PE"
+87,Anthony Ramos,+55 71 0698 8429,360.245.187-90,"Estrada da Conceição, 53
+Jardim São José
+23298795 Porto / SC"
+88,Diogo Santos,+55 41 8615 7944,109.264.758-94,"Jardim Santos, 51
+Vila Copacabana
+06113-056 Porto da Prata / GO"
+89,Amanda Cavalcanti,(081) 2761 6055,930.827.654-83,"Praia Castro, 2
+Estoril
+92617565 Martins de Goiás / DF"
+90,Ana Sophia Costa,+55 71 3586 7235,365.429.081-70,"Alameda Stella Silveira, 72
+Alto Caiçaras
+02171-359 Teixeira do Amparo / TO"
+91,Cauê da Mota,31 9637 8511,072.183.695-02,"Campo Costela, 5
+Conjunto Providencia
+09772-627 Moura / PA"
+92,Ana Luiza Ramos,+55 61 8546-8708,506.732.841-07,"Via de Silva, 53
+Guarani
+95486822 Pereira / RJ"
+93,Raul da Costa,21 2182-1464,760.189.324-31,"Conjunto Clarice Costa
+Vila Barragem Santa Lúcia
+77858-792 Cardoso / RN"
+94,Ana Laura Duarte,(084) 6086 2145,821.097.453-04,"Campo Pedro Miguel Castro
+Mirante
+36802489 Moreira do Oeste / RO"
+95,Nina Nascimento,61 3658-0524,708.351.264-71,"Viela Alice Moreira, 80
+Vila Paquetá
+15503-431 Fogaça da Mata / PE"
+96,Bryan Souza,84 1870-9097,634.259.187-37,"Trecho de Cardoso, 8
+Conjunto São Francisco De Assis
+46652395 Pinto Grande / ES"
+97,Antônio Aragão,84 7877 3633,193.862.547-19,"Área Fernandes, 8
+Vila Jardim São José
+74629447 Ribeiro Alegre / DF"
+98,Sr. Arthur Martins,+55 31 8587-4104,970.435.816-48,"Alameda Porto, 15
+Mantiqueira
+62542-663 Barbosa Verde / TO"
+99,Vitor Moura,+55 11 4380-8821,875.694.321-00,"Via de Lima, 62
+Marieta 3ª Seção
+16016-379 da Costa / RO"
+100,Davi Lucca Viana,(081) 9220-1815,708.294.365-29,"Trevo de Silveira, 2
+Santa Margarida
+71027-231 Fernandes dos Dourados / RO"
