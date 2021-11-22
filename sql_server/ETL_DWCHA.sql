@@ -7,15 +7,15 @@ SELECT NEWID() as uniqueidentifier,
        fun.Nome,
        fun.Telefone,
        fun.CPF,
-       fun.Endereço,
+       fun.EndereÃ§o,
        rel.Tipo,
        cor.CRECI,
        cor.Budget,
        'Current',
-       '2021-11-15',
+       GETDATE(),
        null
   FROM DBCHA.dbo.Corretor as cor
-       inner join DBCHA.dbo.Funcionário as fun on fun.IdFuncionário = cor.IdFuncionário
+       inner join DBCHA.dbo.FuncionÃ¡rio as fun on fun.IdFuncionÃ¡rio = cor.IdFuncionÃ¡rio
        inner join DBCHA.dbo.Relacionamento as rel on rel.IdRelacionamento = fun.IdRelacionamento;
 
 INSERT INTO Cliente
@@ -24,24 +24,24 @@ SELECT NEWID() as uniqueidentifier,
        cli.Nome,
        cli.Telefone,
        cli.CPF,
-       cli.Endereço,
+       cli.EndereÃ§o,
        'Current',
-       '2021-11-15',
+       GETDATE(),
        null
   FROM DBCHA.dbo.Cliente as cli;
 
 INSERT INTO Endereco_area
 SELECT NEWID() as uniqueidentifier,
-       ar.IdÁrea,
+       ar.IdÃrea,
        ar.Cidade,
        ar.Bairro,
        vac.IdCidade,
        vac.Porcentagem,
        'Current',
-       '2021-11-15',
+       GETDATE(),
        null
-  FROM DBCHA.dbo.Área as ar
-       inner join DBCHA.dbo.Vacinação as vac on vac.Nome = ar.Cidade;
+  FROM DBCHA.dbo.Ãrea as ar
+       inner join DBCHA.dbo.VacinaÃ§Ã£o as vac on vac.Nome = ar.Cidade;
 
 INSERT INTO Dia
 SELECT
@@ -65,16 +65,16 @@ SELECT com0.idCompra,
   From DBCHA.dbo.Compra as com0
        inner join DBCHA.dbo.Corretor as cor0 on cor0.IdCorretor = com0.IdCorretor
 
-       inner join DBCHA.dbo.Imóvel as imo0 on imo0.IdImóvel = com0.IdImóvel
-       inner join DBCHA.dbo.Área as ar0 on ar0.IdÁrea = imo0.IdÁrea
+       inner join DBCHA.dbo.ImÃ³vel as imo0 on imo0.IdImÃ³vel = com0.IdImÃ³vel
+       inner join DBCHA.dbo.Ãrea as ar0 on ar0.IdÃrea = imo0.IdÃrea
 
        inner join DBCHA.dbo.Cliente as comp0 on comp0.IdCliente = com0.IdCliente
 
-       inner join DBCHA.dbo.Proprietário as pro0 on pro0.IdImóvel = com0.IdImóvel
+       inner join DBCHA.dbo.ProprietÃ¡rio as pro0 on pro0.IdImÃ³vel = com0.IdImÃ³vel
        inner join DBCHA.dbo.Cliente as ven0 on ven0.IdCliente = pro0.IdCliente
 
        inner join Corretor as cor on cor.id_corretor = cor0.IdCorretor
-       inner join Endereco_area as ar on ar.id_area = ar0.IdÁrea
+       inner join Endereco_area as ar on ar.id_area = ar0.IdÃrea
        inner join Cliente as com on com.id_cliente = comp0.IdCliente
        inner join Cliente as ven on ven.id_cliente = ven0.IdCliente
        inner join Dia as dia on dia.data_completa = com0.Data;
