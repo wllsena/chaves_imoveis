@@ -49,19 +49,19 @@ coberturas.to_csv('data/coberturas.csv', index=False)
 compras.to_csv('data/compras.csv', index=False)
 publicidades.to_csv('data/publicidades.csv', index=False)
 
-areas2 = pd.concat([areas.sample(9), gen_areas(3)]).reset_index()
-clientes2 = pd.concat([clientes.sample(30), gen_clientes(60)]).reset_index()
-funcionarios2 = pd.concat([funcionarios.sample(27),
-                           gen_funcionarios(5, funcoes, relacionamentos)]).reset_index()
-corretores2 = gen_corretores(funcionarios).reset_index()
-imoveis2 = pd.concat([imoveis.sample(10), gen_imoveis(40, areas)]).reset_index()
-proprietarios2 = gen_proprietarios(imoveis, clientes2).reset_index()
-coberturas2 = gen_coberturas(areas2, corretores2).reset_index()
+areas2 = pd.concat([areas, gen_areas(3)]).reset_index(drop=True)
+clientes2 = pd.concat([clientes, gen_clientes(60)]).reset_index(drop=True)
+funcionarios2 = pd.concat([funcionarios,
+                           gen_funcionarios(5, funcoes, relacionamentos)]).reset_index(drop=True)
+corretores2 = gen_corretores(funcionarios).reset_index(drop=True)
+imoveis2 = pd.concat([imoveis, gen_imoveis(40, areas)]).reset_index(drop=True)
+proprietarios2 = gen_proprietarios(imoveis, clientes2).reset_index(drop=True)
+coberturas2 = gen_coberturas(areas2, corretores2).reset_index(drop=True)
 compras2 = gen_compras(30, imoveis2, clientes2, coberturas2,
-                       lambda: random_date('2021-11-01', '2021-11-30')).reset_index()
-publicidades2 = pd.concat(
-    [publicidades.sample(5),
-     gen_publicidades(40, imoveis2, midias, coberturas2)]).reset_index()
+                       lambda: random_date('2021-11-01', '2021-11-30')).reset_index(drop=True)
+publicidades2 = pd.concat([publicidades,
+                           gen_publicidades(40, imoveis2, midias,
+                                            coberturas2)]).reset_index(drop=True)
 
 areas2.to_csv('data/areas2.csv', index=False)
 clientes2.to_csv('data/clientes2.csv', index=False)

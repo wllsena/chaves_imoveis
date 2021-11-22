@@ -1,13 +1,14 @@
-index,IdÁrea,Cidade,Bairro
-8,9,Duque de Caxias,Pinto de da Luz
-7,8,Rio de Janeiro,Martins
-1,2,Niterói,Alves
-2,3,Nova Iguaçu,Correia
-9,10,Duque de Caxias,Rocha Alegre
-3,4,Rio de Janeiro,Porto
-5,6,Rio de Janeiro,Cunha
-6,7,São Gonçalo,Martins do Amparo
-4,5,Rio de Janeiro,Cardoso
-0,1,Rio de Janeiro,Souza de Cavalcanti
-1,2,Rio de Janeiro,Oliveira Verde
-2,3,São Gonçalo,Cardoso de da Mota
+IdÁrea,Cidade,Bairro
+1,Rio de Janeiro,Rodrigues
+2,São Gonçalo,Carvalho do Sul
+3,Rio de Janeiro,da Rocha
+4,Rio de Janeiro,Sales de Oliveira
+5,Rio de Janeiro,Martins
+6,Niterói,Almeida das Pedras
+7,Rio de Janeiro,Sales da Mata
+8,Rio de Janeiro,Nogueira
+9,Nova Iguaçu,Jesus
+10,Rio de Janeiro,Monteiro
+1,Niterói,Barros
+2,Niterói,Nogueira do Galho
+3,Nova Iguaçu,Pereira

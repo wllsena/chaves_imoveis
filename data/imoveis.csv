@@ -1,151 +1,151 @@
 IdImóvel,IdÁrea,Endereço,Valor
-1,10,"Recanto Valentina Ribeiro, 43
-Conjunto Jardim Filadélfia
-19403101 Santos Alegre / AC",100000
-2,6,"Favela Alexia Monteiro, 4
-Custodinha
-03450-159 Viana / TO",537993
-3,4,"Setor Cardoso, 669
-Tirol
-56526971 da Cunha / PI",1029791
-4,8,"Fazenda Jesus, 2
-São Jorge 1ª Seção
-64130-589 Oliveira / AL",1170632
-5,8,"Avenida Freitas, 40
-Marçola
-70188-566 Carvalho / PI",401950
-6,1,"Ladeira de Oliveira
-Vila Nova Gameleira 2ª Seção
-30282986 Ramos Grande / MG",253943
-7,6,"Vale Bruna Ribeiro, 60
-Vila Do Pombal
-40858-923 Cunha das Flores / RO",790879
-8,1,"Parque de Almeida, 1
-Serra Verde
-89944299 da Luz de Ferreira / PI",265695
-9,8,"Aeroporto de Viana, 940
-Santa Terezinha
-22835306 Jesus / RN",367829
-10,7,"Avenida de da Mota
-Vila Madre Gertrudes 3ª Seção
-45225-273 Nunes / RJ",100000
-11,3,"Vale de Azevedo, 35
-Funcionários
-97480-750 Ramos do Galho / PA",1350789
-12,10,"Rodovia de Pereira, 13
-Canadá
-26368404 Carvalho de da Cruz / PA",586394
-13,6,"Campo de da Cunha, 997
-Novo Ouro Preto
-47742-951 Caldeira das Flores / PE",307081
-14,6,"Rodovia de Cunha, 26
-Mineirão
-14682115 Melo / CE",1561736
-15,10,"Favela de Caldeira, 95
-Eymard
-35664331 Pereira / AP",708375
-16,5,"Trecho da Mota, 42
-Caiçaras
-31489619 Cavalcanti de Araújo / RN",100000
-17,9,"Jardim Almeida, 36
-Leonina
-27988163 Moraes / AC",100000
-18,5,"Setor Gonçalves, 97
-Teixeira Dias
-92705507 Fernandes da Prata / AC",863882
-19,1,"Praia de Rezende, 7
-Mangabeiras
-44525-429 Freitas / MT",1993973
-20,3,"Loteamento Maria Vitória Moura, 2
-São Paulo
-24685-580 Pires / RJ",202353
-21,1,"Praça Almeida, 71
-Zilah Sposito
-93095395 Dias / RN",190525
-22,2,"Estrada João Gabriel Silveira, 5
-Guarani
-32005059 Cardoso / PB",100000
-23,2,"Trecho de Teixeira, 1
-Vila Ecológica
-11444-913 Alves / MS",551691
-24,8,"Viela Joaquim Silva
-Conjunto Lagoa
-36536088 Araújo dos Dourados / AC",362034
-25,10,"Favela Isabella Barbosa, 3
-Urca
-81764-273 da Rosa de da Cunha / PI",100000
-26,2,"Viaduto de Teixeira, 675
-Jaraguá
-86138-828 da Conceição do Sul / PR",116267
-27,3,"Viaduto Alana Porto, 47
-Vila Aeroporto
-15384-899 da Luz / MG",513331
-28,6,"Rua Novaes, 5
-Vila Tirol
-60241-795 Azevedo / AC",100000
-29,10,"Lagoa de da Cunha, 802
-Monsenhor Messias
-30708244 da Conceição do Amparo / MS",1671597
-30,10,"Rua João Peixoto, 585
-Boa União 1ª Seção
-47921450 Gonçalves de Minas / PA",100000
-31,3,"Largo de Pereira, 63
-Nova Granada
-82533925 Cavalcanti / RO",100000
-32,9,"Área Alice Fernandes, 729
-Conjunto Paulo Vi
-27373234 Farias / RO",441215
-33,10,"Campo Joana Porto, 43
+1,7,"Feira Alexia Santos, 81
+Califórnia
+78624542 Novaes / RS",100000
+2,7,"Colônia de Nascimento, 289
+Aguas Claras
+99902218 Araújo / RO",488657
+3,9,"Lago Cauã da Costa
+Nova Floresta
+40583570 da Cruz de Almeida / RN",1140609
+4,7,"Lagoa de Carvalho, 78
+Vila Da Amizade
+90859-710 da Luz / RO",689136
+5,10,"Distrito de Farias, 5
+Pousada Santo Antonio
+18072-435 Ferreira do Amparo / TO",721246
+6,5,"Travessa da Mota, 408
+União
+65571097 Freitas do Oeste / ES",1412148
+7,9,"Loteamento de Rodrigues, 150
+Vila Nova Paraíso
+94705301 Caldeira / DF",127511
+8,2,"Loteamento Silveira, 68
+Silveira
+92998582 Duarte do Oeste / RJ",100000
+9,7,"Favela Maria Alice Costela, 6
+Itatiaia
+51870729 das Neves / AC",100000
+10,8,"Trevo Gomes
 Unidas
-76526-478 Freitas / AP",288465
-34,9,"Ladeira da Mota, 73
-Vila Engenho Nogueira
-48674012 Barros / SP",391622
-35,9,"Estrada de Santos, 227
-Pantanal
-55776777 da Luz / SC",100000
-36,6,"Vale da Luz, 85
-Conjunto Providencia
-19642-936 Peixoto de Ribeiro / AP",690570
-37,6,"Campo de Ramos, 99
-São Tomaz
-52130-327 da Rocha do Galho / TO",599777
-38,3,"Ladeira de Dias, 41
-Barroca
-68012256 da Mata das Flores / MA",100000
-39,5,"Área Natália Azevedo, 50
-Maria Helena
-04087980 Gomes / MS",1482351
-40,10,"Largo Júlia Cunha, 399
-Aarão Reis
-70719-922 Araújo / DF",1208080
-41,2,"Conjunto Maria Alice Fernandes, 453
-Bairro Das Indústrias Ii
-37762-671 da Mota da Praia / AM",100000
-42,1,"Morro de Correia, 70
+54150520 Dias / PI",100000
+11,5,"Rua Ana Lívia Pinto, 8
+Madri
+19821472 Fernandes de Novaes / RN",143221
+12,7,"Trevo Cardoso, 89
+Vila De Sá
+90459496 Rezende / MS",681270
+13,6,"Estação Eloah Pinto, 150
+São Paulo
+92901120 Ramos / AP",511200
+14,6,"Trevo Aragão, 99
+Alto Caiçaras
+32932432 Rezende / SC",100000
+15,2,"Loteamento Viana, 169
+Unidas
+09214433 Castro das Flores / PA",100000
+16,9,"Estrada Natália Souza, 8
+Vila Madre Gertrudes 4ª Seção
+73950-682 Lopes / AP",432418
+17,9,"Colônia de Sales, 86
+Vila Pinho
+82486-346 Ribeiro / MA",535783
+18,8,"Praia de Freitas, 90
+Vila De Sá
+13415-240 Silva / RR",600349
+19,9,"Aeroporto de Barbosa, 84
+Vila São Gabriel Jacui
+20026619 Barbosa / PA",433862
+20,2,"Vereda Silveira, 99
+Varzea Da Palma
+86092914 Araújo / AC",100000
+21,7,"Conjunto Nogueira
+Pedreira Padro Lopes
+31084440 Ramos / SE",412707
+22,10,"Residencial João Guilherme Silva, 9
+Barreiro
+45778998 Jesus das Pedras / BA",100000
+23,8,"Setor de Rezende, 717
+São João Batista
+56679815 da Mota dos Dourados / PE",500493
+24,4,"Aeroporto da Costa
+Santa Lúcia
+24902229 Azevedo das Flores / MA",418394
+25,3,"Passarela Melo
+Vila São Dimas
+06910-620 Monteiro da Praia / CE",1111136
+26,1,"Rua de Aragão, 188
+Vila Aeroporto
+69699279 Gomes / GO",759396
+27,6,"Vale de Barbosa, 44
+Anchieta
+66178-456 Peixoto Paulista / AP",255538
+28,4,"Distrito Caldeira, 8
+Itapoa
+70852-721 da Rocha da Praia / PB",100000
+29,4,"Vila de da Cunha, 19
+Comiteco
+43785-018 Pinto de Goiás / GO",100000
+30,5,"Trevo Melo, 1
+Vitoria
+13395209 Carvalho / MS",385634
+31,4,"Trecho de da Rocha, 197
+Betânia
+00810463 Farias da Mata / CE",100000
+32,8,"Estrada Moura, 61
+Camargos
+33173234 Castro / PI",797230
+33,3,"Travessa Silveira, 38
+Conjunto Califórnia I
+28462062 Mendes das Pedras / MA",100000
+34,7,"Condomínio Vicente Vieira, 9
+Vila Puc
+22393-849 Araújo / AC",507417
+35,2,"Distrito de Mendes, 58
+Satelite
+22305947 Duarte / SC",625195
+36,8,"Largo de Vieira, 686
+Delta
+08540-508 Cardoso Paulista / MT",1358872
+37,6,"Quadra Maria Vitória Martins
+Planalto
+83294873 Araújo Paulista / SP",430631
+38,10,"Esplanada Rodrigues, 99
+Vila Nova Gameleira 1ª Seção
+67280994 Gonçalves de Dias / MG",646301
+39,6,"Conjunto Correia, 139
+Coqueiros
+20825-567 Azevedo do Campo / AM",382079
+40,10,"Viaduto Lucas Gabriel Azevedo, 45
+Vila Real 2ª Seção
+91964-913 da Conceição de Freitas / SP",649028
+41,3,"Viela de Costa, 38
+Boa União 2ª Seção
+87054024 Sales / RS",880857
+42,1,"Aeroporto Alice Cavalcanti
+Vila Nova Dos Milionarios
+86149-776 Ferreira / CE",484000
+43,5,"Ladeira Cardoso, 761
+Santo Antônio
+20856-644 Costa / PB",284692
+44,4,"Vale da Cruz, 3
+Marieta 3ª Seção
+61473-716 Gonçalves / MT",363409
+45,3,"Esplanada Silva, 40
 Brasil Industrial
-71565-852 da Cunha do Oeste / RS",881273
-43,1,"Núcleo Maria Alice Ribeiro, 6
-Leonina
-98296-669 Alves de Goiás / MA",576329
-44,3,"Ladeira de da Cruz, 83
-Conjunto Celso Machado
-22559-604 Fogaça do Sul / MS",695684
-45,8,"Vale Eloah Freitas
-Vila Canto Do Sabiá
-82321-669 Lima / PB",709232
-46,6,"Esplanada Bernardo da Mata
-Garças
-10913-786 Moraes / RS",531182
-47,1,"Praia Castro
-Das Industrias I
-13209347 Pereira / SP",896140
-48,4,"Campo Barbosa, 5
-Mantiqueira
-53940-945 Carvalho de Farias / RR",341252
-49,8,"Trevo das Neves, 13
-Caetano Furquim
-36222-350 Araújo de Ferreira / SP",781514
-50,3,"Loteamento de Porto, 56
-Independência
-82479-192 Monteiro de Goiás / PE",150616
+88514141 da Paz das Flores / ES",177112
+46,10,"Campo Emanuelly da Mata, 7
+Barão Homem De Melo 1ª Seção
+70692-297 Silveira Paulista / PB",741826
+47,8,"Travessa de Pires, 44
+Mirante
+80958-936 Cavalcanti de Moraes / RJ",481565
+48,1,"Sítio Isabella Jesus, 38
+Vila Nova Cachoeirinha 3ª Seção
+94662918 da Cunha / GO",1013534
+49,3,"Condomínio de Oliveira, 5
+Cinquentenário
+88463-297 Oliveira / DF",1180341
+50,3,"Fazenda de Cavalcanti, 46
+Floramar
+54394961 Pereira da Mata / MS",592069
