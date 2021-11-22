@@ -17,7 +17,7 @@ drop table Vacinação;
 
 CREATE TABLE Mídia
   (
-    IdMídia INT NOT NULL,
+    IdMídia INT NOT NULL auto_increment,
     Tipo VARCHAR(30) NOT NULL,
     PRIMARY KEY (IdMídia),
     UNIQUE (Tipo)
@@ -25,7 +25,7 @@ CREATE TABLE Mídia
 
 CREATE TABLE Cliente
   (
-    IdCliente INT NOT NULL,
+    IdCliente INT NOT NULL auto_increment,
     Nome VARCHAR(50) NOT NULL,
     Telefone VARCHAR(50) NOT NULL,
     CPF VARCHAR(50) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE Cliente
 
 CREATE TABLE Área
   (
-    IdÁrea INT NOT NULL,
+    IdÁrea INT NOT NULL auto_increment,
     Cidade VARCHAR(50) NOT NULL,
     Bairro VARCHAR(50),
     PRIMARY KEY (IdÁrea)
@@ -44,7 +44,7 @@ CREATE TABLE Área
 
 CREATE TABLE Função
   (
-    IdFunção INT NOT NULL,
+    IdFunção INT NOT NULL auto_increment,
     Tipo VARCHAR(30) NOT NULL,
     PRIMARY KEY (IdFunção),
     UNIQUE (Tipo)
@@ -52,7 +52,7 @@ CREATE TABLE Função
 
 CREATE TABLE Relacionamento
   (
-    IdRelacionamento INT NOT NULL,
+    IdRelacionamento INT NOT NULL auto_increment,
     Tipo VARCHAR(20) NOT NULL,
     PRIMARY KEY (IdRelacionamento),
     UNIQUE (Tipo)
@@ -60,7 +60,7 @@ CREATE TABLE Relacionamento
 
 CREATE TABLE Imóvel
   (
-    IdImóvel INT NOT NULL,
+    IdImóvel INT NOT NULL auto_increment,
     IdÁrea INT NOT NULL,
     Endereço VARCHAR(100) NOT NULL,
     Valor FLOAT NOT NULL,
@@ -70,7 +70,7 @@ CREATE TABLE Imóvel
 
 CREATE TABLE Proprietário
   (
-    IdImóvel INT NOT NULL,
+    IdImóvel INT NOT NULL auto_increment,
     IdCliente INT NOT NULL,
     FOREIGN KEY (IdImóvel) REFERENCES Imóvel(IdImóvel),
     FOREIGN KEY (IdCliente) REFERENCES Cliente(IdCliente)
@@ -78,7 +78,7 @@ CREATE TABLE Proprietário
 
 CREATE TABLE Funcionário
   (
-    IdFuncionário INT NOT NULL,
+    IdFuncionário INT NOT NULL auto_increment,
     Nome VARCHAR(50) NOT NULL,
     Telefone VARCHAR(50) NOT NULL,
     CPF VARCHAR(50) NOT NULL,
@@ -93,7 +93,7 @@ CREATE TABLE Funcionário
 
 CREATE TABLE Corretor
   (
-    IdCorretor INT NOT NULL,
+    IdCorretor INT NOT NULL auto_increment,
     Budget FLOAT NOT NULL,
     CRECI INT NOT NULL,
     IdFuncionário INT NOT NULL,
@@ -104,7 +104,7 @@ CREATE TABLE Corretor
 
 CREATE TABLE Publicidade
   (
-    IdPublicidade INT NOT NULL,
+    IdPublicidade INT NOT NULL auto_increment,
     Orçamento FLOAT NOT NULL,
     IdImóvel INT NOT NULL,
     IdCorretor INT NOT NULL,
@@ -119,7 +119,7 @@ CREATE TABLE Publicidade
 
 CREATE TABLE Compra
   (
-    IdCompra INT NOT NULL,
+    IdCompra INT NOT NULL auto_increment,
     Data DATE NOT NULL,
     Valor FLOAT NOT NULL,
     IdImóvel INT NOT NULL,
@@ -133,7 +133,7 @@ CREATE TABLE Compra
 
 CREATE TABLE Cobertura
   (
-    IdÁrea INT NOT NULL,
+    IdÁrea INT NOT NULL auto_increment,
     IdCorretor INT NOT NULL,
     FOREIGN KEY (IdÁrea) REFERENCES Área(IdÁrea),
     FOREIGN KEY (IdCorretor) REFERENCES Corretor(IdCorretor)
@@ -141,7 +141,7 @@ CREATE TABLE Cobertura
 
 CREATE TABLE Vacinação
   (
-    IdCidade INT NOT NULL,
+    IdCidade INT NOT NULL auto_increment,
     Nome VARCHAR(50) NOT NULL,
     Vacinados INT NOT NULL,
     População INT NOT NULL,

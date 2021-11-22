@@ -16,9 +16,10 @@ def csv2sql(file_path, table_name):
     with open(file_path, 'r') as outfile:
         reader = csv.reader(outfile)
         next(reader)
-        rows = '),\n('.join([[convert(x) for x in row].__str__()[1:-1].replace('None', 'NULL')
-                             for row in reader])
-        string_sql = f'INSERT INTO {table_name} VALUES\n({rows});\n\n'
+        rows = '),\n(NULL, '.join([[convert(x)
+                                    for x in row[1:]].__str__()[1:-1].replace('None', 'NULL')
+                                   for row in reader])
+        string_sql = f'INSERT INTO {table_name} VALUES\n(NULL, {rows});\n\n'
 
     return string_sql
 
