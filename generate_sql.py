@@ -43,3 +43,19 @@ script = ('USE DBCHA;\n\n' + midias + funcoes + relacionamentos + areas + client
 
 with open('cha_dml.sql', 'w') as file:
     file.write(script)
+
+areas2 = csv2sql('data/areas2.csv', 'Área')
+clientes2 = csv2sql('data/clientes2.csv', 'Cliente')
+funcionarios2 = csv2sql('data/funcionarios2.csv', 'Funcionário')
+corretores2 = csv2sql('data/corretores2.csv', 'Corretor')
+imoveis2 = csv2sql('data/imoveis2.csv', 'Imóvel')
+proprietarios2 = csv2sql('data/proprietarios2.csv', 'Proprietário')
+coberturas2 = csv2sql('data/coberturas2.csv', 'Cobertura')
+compras2 = csv2sql('data/compras2.csv', 'Compra')
+publicidade2 = csv2sql('data/publicidades2.csv', 'Publicidade')
+
+script2 = ('USE DBCHA;\n\n' + areas2 + clientes2 + funcionarios2 + corretores2 + imoveis2 +
+           proprietarios2 + coberturas2 + compras2 + publicidade2).replace('\"', '\'')
+
+with open('cha_dml2.sql', 'w') as file:
+    file.write(script2)
