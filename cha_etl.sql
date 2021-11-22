@@ -12,7 +12,7 @@ SELECT null, -- NEWID() as uniqueidentifier,
        cor.CRECI,
        cor.Budget,
        'Current',
-       '2021-11-15',
+       CURDATE(),
        null
   FROM DBCHA.Corretor as cor
        inner join DBCHA.Funcionário as fun on fun.IdFuncionário = cor.IdFuncionário
@@ -26,7 +26,7 @@ SELECT null, -- NEWID() as uniqueidentifier,
        cli.CPF,
        cli.Endereço,
        'Current',
-       '2021-11-15',
+       CURDATE(),
        null
   FROM DBCHA.Cliente as cli;
 
@@ -38,7 +38,7 @@ SELECT null, -- NEWID() as uniqueidentifier,
        vac.IdCidade,
        vac.Porcentagem,
        'Current',
-       '2021-11-15',
+       CURDATE(),
        null
   FROM DBCHA.Área as ar
        inner join DBCHA.Vacinação as vac on vac.Nome = ar.Cidade;
