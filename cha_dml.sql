@@ -1,4 +1,3 @@
-
 USE DBCHA;
 
 INSERT INTO Mídia VALUES
@@ -354,3 +353,9 @@ INSERT INTO Publicidade VALUES
 (49, 1120, 24, 5, 4, '2021-10-22', '2021-11-05'),
 (50, 906, 20, 8, 5, '2021-07-02', '2021-07-08');
 
+INSERT INTO Vacinação VALUES
+(330455, 'Rio de Janeiro', 5917212, 6775561, 87.33),
+(330490, 'São Gonçalo', 651133, 1098357, 59.28),
+(330170, 'Duque de Caxias', 568565, 929449, 61.17),
+(330350, 'Nova Iguaçu', 569459, 825388, 68.99),
+(330330, 'Niterói', 478335, 516981, 92.52);

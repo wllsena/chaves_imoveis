@@ -2,7 +2,7 @@
 USE DWCHA;
 
 INSERT INTO Corretor
-SELECT null,
+SELECT null, -- NEWID() as uniqueidentifier,
        cor.IdCorretor,
        fun.Nome,
        fun.Telefone,
@@ -19,7 +19,7 @@ SELECT null,
        inner join DBCHA.Relacionamento as rel on rel.IdRelacionamento = fun.IdRelacionamento;
 
 INSERT INTO Cliente
-SELECT null,
+SELECT null, -- NEWID() as uniqueidentifier,
        cli.IdCliente,
        cli.Nome,
        cli.Telefone,
@@ -31,34 +31,35 @@ SELECT null,
   FROM DBCHA.Cliente as cli;
 
 INSERT INTO Endereco_area
-SELECT null,
+SELECT null, -- NEWID() as uniqueidentifier,
        ar.IdÁrea,
        ar.Cidade,
        ar.Bairro,
-       Null,
-       Null,
+       vac.IdCidade,
+       vac.Porcentagem,
        'Current',
        '2021-11-15',
        null
-  FROM DBCHA.Área as ar;
+  FROM DBCHA.Área as ar
+       inner join DBCHA.Vacinação as vac on vac.Nome = ar.Cidade;
 
 INSERT INTO Dia
 SELECT
-  NULL,
-  com.Data,
-  WEEKDAY(com.Data),
-  DAY(com.Data),
-  MONTH(com.Data),
-  QUARTER(com.Data),
-  YEAR(com.Data)
-  From DBCHA.Compra as com;
+  NULL, -- NEWID() as uniqueidentifier,
+  data,
+  WEEKDAY(data),
+  DAY(data),
+  MONTH(data),
+  QUARTER(data),
+  YEAR(data)
+  From (SELECT DISTINCT com.Data FROM DBCHA.Compra as com) as data;
 
 INSERT INTO fato_venda_det
-SELECT NULL,
-       cor.id_corretor,
-       ar.id_area,
-       com.id_cliente,
-       ven.id_cliente,
+SELECT com0.idCompra,
+       ar.chave_area,
+       cor.chave_corretor,
+       com.chave_cliente,
+       ven.chave_cliente,
        dia.id_dia,
        com0.Valor*0.06
   From DBCHA.Compra as com0
@@ -84,7 +85,3 @@ SELECT det.id_dia,
        sum(det.comissao)
   FROM fato_venda_det as det
  group by det.id_dia, det.id_area;
-
-
-
-

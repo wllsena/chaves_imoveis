@@ -35,10 +35,11 @@ proprietarios = csv2sql('data/proprietarios.csv', 'Proprietário')
 coberturas = csv2sql('data/coberturas.csv', 'Cobertura')
 compras = csv2sql('data/compras.csv', 'Compra')
 publicidade = csv2sql('data/publicidades.csv', 'Publicidade')
+vacinacao = csv2sql('data/vacinacao.csv', 'Vacinação')
 
 script = ('USE DBCHA;\n\n' + midias + funcoes + relacionamentos + areas + clientes + funcionarios +
-          corretores + imoveis + proprietarios + coberturas + compras + publicidade).replace(
-              '\"', '\'')
+          corretores + imoveis + proprietarios + coberturas + compras + publicidade +
+          vacinacao).replace('\"', '\'')
 
 with open('cha_dml.sql', 'w') as file:
     file.write(script)

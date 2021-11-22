@@ -1,3 +1,4 @@
+
 USE DWCHA;
 
 INSERT INTO Corretor
@@ -34,39 +35,29 @@ SELECT NEWID() as uniqueidentifier,
        ar.IdÁrea,
        ar.Cidade,
        ar.Bairro,
-       Null,
-       Null,
+       vac.IdCidade,
+       vac.Porcentagem,
        'Current',
        '2021-11-15',
        null
-  FROM DBCHA.dbo.Área as ar;
+  FROM DBCHA.dbo.Área as ar
+       inner join DBCHA.dbo.Vacinação as vac on vac.Nome = ar.Cidade;
 
 INSERT INTO Dia
 SELECT
-	NEWID() as uniqueidentifier,
-	a.DataCompleta,
-	a.DiaSemana,
-	a.DiaMes,
-	a.Mes,
-	a.Trimestre,
-	a.Ano
-FROM (
-	SELECT DISTINCT
-		t.Data as DataCompleta,
-		datename(weekday, t.Data) as DiaSemana,
-		datepart(day, t.Data) as DiaMes,
-		datepart(month, t.Data) as Mes,
-		datepart(quarter, t.Data) as Trimestre,
-		datepart(year, t.Data) as Ano
-	FROM 
-		DBCHA.dbo.Compra AS t 
-	WHERE 
-		t.Data not in (select [data_completa] from Dia)) as a;
+  NEWID() as uniqueidentifier,
+  data,
+  datename(weekday, data),
+  datepart(day, data),
+  datepart(month, data),
+  datepart(quarter, data),
+  datepart(year, data)
+  From (SELECT DISTINCT com.Data FROM DBCHA.dbo.Compra as com) as data;
 
 INSERT INTO fato_venda_det
-SELECT com0.IdCompra,
-       cor.chave_corretor,
+SELECT com0.idCompra,
        ar.chave_area,
+       cor.chave_corretor,
        com.chave_cliente,
        ven.chave_cliente,
        dia.id_dia,
@@ -94,4 +85,3 @@ SELECT det.id_dia,
        sum(det.comissao)
   FROM fato_venda_det as det
  group by det.id_dia, det.id_area;
-

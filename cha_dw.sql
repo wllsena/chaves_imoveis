@@ -9,7 +9,7 @@ drop table dia;
 drop table endereco_area;
 
 CREATE TABLE cliente (
-  chave_cliente uniqueidentifier NOT NULL,
+  chave_cliente int NOT NULL auto_increment, # remove auto_increment
   id_cliente int NOT NULL,
   nome varchar(250) NOT NULL,
   telefone varchar(20) NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE cliente (
 );
 
 CREATE TABLE corretor (
-  chave_corretor uniqueidentifier NOT NULL,
+  chave_corretor int NOT NULL auto_increment, # remove auto_increment
   id_corretor int NOT NULL,
   nome varchar(250) NOT NULL,
   telefone varchar(20) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE corretor (
 );
 
 CREATE TABLE dia (
-  id_dia uniqueidentifier NOT NULL,
+  id_dia int NOT NULL auto_increment, # remove auto_increment
   data_completa datetime NOT NULL,
   dia_semana varchar(20) NOT NULL,
   dia_mes int NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE dia (
 );
 
 CREATE TABLE endereco_area (
-  chave_area uniqueidentifier NOT NULL,
+  chave_area int NOT NULL auto_increment, # remove auto_increment
   id_area int NOT NULL,
   nome_cidade varchar(200) NOT NULL,
   nome_bairo varchar(200) NULL,
@@ -62,12 +62,12 @@ CREATE TABLE endereco_area (
 );
 
 CREATE TABLE fato_venda_det (
-  id_venda int NOT NULL,
-  id_area uniqueidentifier NOT NULL,
-  id_corretor uniqueidentifier NOT NULL,
-  id_comprador uniqueidentifier NOT NULL,
-  id_vendedor uniqueidentifier NOT NULL,
-  id_dia uniqueidentifier NOT NULL,
+  id_venda int NOT NULL auto_increment, # remove auto_increment
+  id_area int NOT NULL,
+  id_corretor int NOT NULL,
+  id_comprador int NOT NULL,
+  id_vendedor int NOT NULL,
+  id_dia int NOT NULL,
   comissao decimal(12,2) NOT NULL,
   PRIMARY KEY (id_venda, id_area),
   FOREIGN KEY (id_area) REFERENCES endereco_area (chave_area),
@@ -78,8 +78,8 @@ CREATE TABLE fato_venda_det (
 );
 
 CREATE TABLE fato_venda_agreg (
-  id_dia uniqueidentifier NOT NULL,
-  id_area uniqueidentifier NOT NULL,
+  id_dia int NOT NULL auto_increment, # remove auto_increment
+  id_area int NOT NULL,
   comissao decimal(12,2) NOT NULL,
   PRIMARY KEY (id_dia, id_area),
   FOREIGN KEY (id_dia) REFERENCES dia (id_dia),

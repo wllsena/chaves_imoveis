@@ -1,4 +1,3 @@
--- CREATE DATABASE DBCHA;
 
 USE DBCHA;
 
@@ -14,6 +13,7 @@ drop table Área;
 drop table Relacionamento;
 drop table Função;
 drop table Mídia;
+drop table Vacinação;
 
 CREATE TABLE Mídia
   (
@@ -137,4 +137,14 @@ CREATE TABLE Cobertura
     IdCorretor INT NOT NULL,
     FOREIGN KEY (IdÁrea) REFERENCES Área(IdÁrea),
     FOREIGN KEY (IdCorretor) REFERENCES Corretor(IdCorretor)
+  );
+
+CREATE TABLE Vacinação
+  (
+    IdCidade INT NOT NULL,
+    Nome VARCHAR(50) NOT NULL,
+    Vacinados INT NOT NULL,
+    População INT NOT NULL,
+    Porcentagem FLOAT NOT NULL,
+    PRIMARY KEY (IdCidade)
   );
