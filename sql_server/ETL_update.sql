@@ -203,9 +203,6 @@ into DWCHA.dbo.staging_vacinacao FROM
 
 --SELECT IdCidade, Nome, Vacinados, População, Porcentagem from DWCHA.dbo.staging_vacinacao;
 
---  NÃO TESTADO000000000000000000000000000000000000000000000000000000000000000000000000
-
-
 drop table DWCHA.dbo.temp_endereco_area
 SELECT
        ar.IdÁrea,
