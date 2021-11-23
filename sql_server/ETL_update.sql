@@ -27,7 +27,7 @@ into DWCHA.dbo.staging_corretor FROM
 @S,@E,'all'
 );
 
-drop table DWCHA.dbo.staging_funcionário
+drop table DWCHA.dbo.staging_funcionário;
 -- TABELA FUNCIONÁRIO
 -- Habilitar as tabelas
 EXEC sys.sp_cdc_enable_table
@@ -49,7 +49,7 @@ into DWCHA.dbo.staging_funcionário FROM
 @S,@E,'all'
 );
 
-drop table DWCHA.dbo.temp_corretor 
+drop table DWCHA.dbo.temp_corretor ;
 SELECT
        cor.IdCorretor,
        fun.Nome,
@@ -106,7 +106,7 @@ SELECT NEWID()as uniqueidentifier
 
   --DIMENSÃO CLIENTE
 
-drop table DWCHA.dbo.staging_cliente
+drop table DWCHA.dbo.staging_cliente;
 
 -- TABELA CLIENTE
 -- Habilitar as tabelas
@@ -152,7 +152,7 @@ SELECT NEWID() as uniqueidentifier,
 
 --DIMENSÃO ENDERECO_AREA
 
- drop table DWCHA.dbo.staging_área
+ drop table DWCHA.dbo.staging_área;
 
 -- TABELA AREA
 -- Habilitar as tabelas
@@ -178,7 +178,7 @@ into DWCHA.dbo.staging_área FROM
 
 --SELECT IdÁrea, Cidade, Bairro FROM DWCHA.dbo.staging_área;
 
- drop table DWCHA.dbo.staging_vacinacao
+ drop table DWCHA.dbo.staging_vacinacao;
 
 -- TABELA vacinacao
 -- Habilitar as tabelas
@@ -203,7 +203,7 @@ into DWCHA.dbo.staging_vacinacao FROM
 
 --SELECT IdCidade, Nome, Vacinados, População, Porcentagem from DWCHA.dbo.staging_vacinacao;
 
-drop table DWCHA.dbo.temp_endereco_area
+drop table DWCHA.dbo.temp_endereco_area;
 SELECT
        ar.IdÁrea,
        ar.Cidade,
@@ -278,7 +278,7 @@ FROM (
 ---FACT TABLES
 
 
-drop table DWCHA.dbo.staging_compra
+drop table DWCHA.dbo.staging_compra;
 
 -- TABELA COMPRA
 -- Habilitar as tabelas
