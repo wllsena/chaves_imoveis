@@ -1,0 +1,24 @@
+Participações:
+
+Ari:
+
+Desenvolvimento do modelo relacional e DDL;
+ETL de atualização;
+Excel.
+
+William:
+
+Desenvolvimento do modelo relacional e DDL ;
+Geração de dados;
+ETL da carga inicial;
+ETL de atualização.
+
+
+João Alcindo:
+
+Desenvolvimento do modelo relacional e DDL;
+Obtenção de dados da vacinação;
+ETL de atualização;
+Slides.
+
+
