@@ -265,7 +265,7 @@ SELECT
 	a.Ano
 FROM (
 	SELECT DISTINCT
-		t.Data as DataCompleta,
+		cast(convert(varchar, t.Data, 23) as datetime) as DataCompleta,
 		datename(weekday, t.Data) as DiaSemana,
 		datepart(day, t.Data) as DiaMes,
 		datepart(month, t.Data) as Mes,
@@ -305,3 +305,35 @@ into DWCHA.dbo.staging_compra FROM
 );
 
 
+INSERT INTO fato_venda_det
+SELECT com0.idCompra,
+       ar.chave_area,
+       cor.chave_corretor,
+       com.chave_cliente,
+       ven.chave_cliente,
+       dia.id_dia,
+       com0.Valor*0.06
+  From DWCHA.dbo.staging_compra as com0
+       inner join DBCHA.dbo.Corretor as cor0 on cor0.IdCorretor = com0.IdCorretor
+
+       inner join DBCHA.dbo.Imóvel as imo0 on imo0.IdImóvel = com0.IdImóvel
+       inner join DBCHA.dbo.Área as ar0 on ar0.IdÁrea = imo0.IdÁrea
+
+       inner join DBCHA.dbo.Cliente as comp0 on comp0.IdCliente = com0.IdCliente
+
+       inner join DBCHA.dbo.Proprietário as pro0 on pro0.IdImóvel = com0.IdImóvel
+       inner join DBCHA.dbo.Cliente as ven0 on ven0.IdCliente = pro0.IdCliente
+
+       inner join (SELECT * FROM Corretor WHERE status = 'Current') as cor on cor.id_corretor = cor0.IdCorretor
+       inner join (SELECT * FROM Endereco_area WHERE status = 'Current') as ar on ar.id_area = ar0.IdÁrea
+       inner join (SELECT * FROM Cliente WHERE status = 'Current') as com on com.id_cliente = comp0.IdCliente
+       inner join (SELECT * FROM Cliente WHERE status = 'Current')  as ven on ven.id_cliente = ven0.IdCliente
+       inner join Dia as dia on dia.data_completa = com0.Data;
+
+
+INSERT INTO fato_venda_agreg
+SELECT det.id_dia, 105,
+       det.id_area,
+       sum(det.comissao)
+  FROM fato_venda_det as det
+ group by det.id_dia, det.id_area;

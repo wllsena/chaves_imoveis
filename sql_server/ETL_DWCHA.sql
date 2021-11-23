@@ -46,7 +46,7 @@ SELECT NEWID() as uniqueidentifier,
 INSERT INTO Dia
 SELECT
   NEWID() as uniqueidentifier,
-  data,
+  cast(convert(varchar, data, 23) as datetime),
   datename(weekday, data),
   datepart(day, data),
   datepart(month, data),
