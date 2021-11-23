@@ -129,9 +129,7 @@ def random_date(start, end):
     time1 = datetime.strptime(start, '%Y-%m-%d')
     time2 = datetime.strptime(end, '%Y-%m-%d')
     delta = time2 - time1
-    int_delta = (delta.days * 24 * 60 * 60) + delta.seconds
-    random_second = np.random.randint(int_delta)
-    date = time1 + timedelta(seconds=random_second)
+    date = time1 + timedelta(delta.days)
     return date.strftime('%Y-%m-%d')
 
 
