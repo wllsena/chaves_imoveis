@@ -215,7 +215,7 @@ SELECT
        null as effective_enddate
 into DWCHA.dbo.temp_endereco_area
   FROM DBCHA.dbo.Área as ar
-       inner join DWCHA.dbo.staging_vacinacao as vac on vac.Nome = ar.Cidade;
+       inner join DWCHA.dbo.staging_vacinacao as vac on vac.Nome = ar.Cidade
 union
 SELECT
        ar.IdÁrea,
@@ -227,8 +227,10 @@ SELECT
        GETDATE() as effective_startdate,
        null as effective_enddate
   FROM DWCHA.dbo.staging_área as ar
-       inner join DWCHA.dbo.staging_vacinacao as vac on vac.Nome = ar.Cidade;	   
-	   
+       inner join DBCHA.dbo.Vacinação as vac on vac.Nome = ar.Cidade;	   
+
+--SELECT * FROM DWCHA.dbo.temp_endereco_area;
+
 UPDATE DWCHA.dbo.Endereco_area
 SET status='Notcurrent', effective_enddate=GETDATE()
 --SELECT * FROM DWCHA.dbo.endereco_area
@@ -251,7 +253,7 @@ SELECT NEWID()as uniqueidentifier
 --DIMENSÃO DIA
 
 
-INSERT INTO Dia
+INSERT INTO DWCHA.dbo.Dia
 SELECT
 	NEWID() as uniqueidentifier,
 	a.DataCompleta,
@@ -271,7 +273,7 @@ FROM (
 	FROM 
 		DBCHA.dbo.Compra AS t 
 	WHERE 
-		t.Data not in (select [data_completa] from Dia)) as a;
+		t.Data not in (select [data_completa] from DWCHA.dbo.Dia)) as a;
 
 
 
@@ -301,8 +303,9 @@ into DWCHA.dbo.staging_compra FROM
 @S,@E,'all'
 );
 
+--SELECT * FROM  DWCHA.dbo.staging_compra;
 
-INSERT INTO fato_venda_det
+INSERT INTO DWCHA.dbo.fato_venda_det
 SELECT com0.idCompra,
        ar.chave_area,
        cor.chave_corretor,
@@ -328,9 +331,16 @@ SELECT com0.idCompra,
        inner join DWCHA.dbo.Dia as dia on dia.data_completa = com0.Data;
 
 
-INSERT INTO fato_venda_agreg
+
+
+TRUNCATE TABLE DWCHA.dbo.fato_venda_agreg;
+
+INSERT INTO DWCHA.dbo.fato_venda_agreg
 SELECT det.id_dia,
        det.id_area,
        sum(det.comissao)
-  FROM fato_venda_det as det
+  FROM DWCHA.dbo.fato_venda_det as det
  group by det.id_dia, det.id_area;
+
+
+
