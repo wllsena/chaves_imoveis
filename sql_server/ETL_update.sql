@@ -275,7 +275,7 @@ FROM (
 
 
 
----FACT TABLE
+---FACT TABLES
 
 
 drop table DWCHA.dbo.staging_compra
@@ -321,15 +321,15 @@ SELECT com0.idCompra,
        inner join DBCHA.dbo.Proprietário as pro0 on pro0.IdImóvel = com0.IdImóvel
        inner join DBCHA.dbo.Cliente as ven0 on ven0.IdCliente = pro0.IdCliente
 
-       inner join (SELECT * FROM Corretor WHERE status = 'Current') as cor on cor.id_corretor = cor0.IdCorretor
-       inner join (SELECT * FROM Endereco_area WHERE status = 'Current') as ar on ar.id_area = ar0.IdÁrea
-       inner join (SELECT * FROM Cliente WHERE status = 'Current') as com on com.id_cliente = comp0.IdCliente
-       inner join (SELECT * FROM Cliente WHERE status = 'Current')  as ven on ven.id_cliente = ven0.IdCliente
-       inner join Dia as dia on dia.data_completa = com0.Data;
+       inner join (SELECT * FROM DWCHA.dbo.Corretor WHERE status = 'Current') as cor on cor.id_corretor = cor0.IdCorretor
+       inner join (SELECT * FROM DWCHA.dbo.Endereco_area WHERE status = 'Current') as ar on ar.id_area = ar0.IdÁrea
+       inner join (SELECT * FROM DWCHA.dbo.Cliente WHERE status = 'Current') as com on com.id_cliente = comp0.IdCliente
+       inner join (SELECT * FROM DWCHA.dbo.Cliente WHERE status = 'Current')  as ven on ven.id_cliente = ven0.IdCliente
+       inner join DWCHA.dbo.Dia as dia on dia.data_completa = com0.Data;
 
 
 INSERT INTO fato_venda_agreg
-SELECT det.id_dia, 105,
+SELECT det.id_dia,
        det.id_area,
        sum(det.comissao)
   FROM fato_venda_det as det
